@@ -34,11 +34,31 @@ document.addEventListener("DOMContentLoaded", function () {
   hafnarfjordurButton.addEventListener("click", function () {
     bookingIframe.src = "https://noona.is/heilsunuddonnu/book";
     hafnarfjordurButtonPulse.classList.add("bg-gradient-to-r");
+    hafnarfjordurButton.classList.add(
+      "outline-2",
+      "outline-offset-2",
+      "outline-dotted"
+    );
     vogarButtonPulse.classList.remove("bg-gradient-to-r");
+    vogarButton.classList.remove(
+      "outline-2",
+      "outline-offset-2",
+      "outline-dotted"
+    );
   });
   vogarButton.addEventListener("click", function () {
     bookingIframe.src = "https://noona.is/heilsunuddogheilun190vogar/book";
     vogarButtonPulse.classList.add("bg-gradient-to-r");
+    vogarButton.classList.add(
+      "outline-2",
+      "outline-offset-2",
+      "outline-dotted"
+    );
     hafnarfjordurButtonPulse.classList.remove("bg-gradient-to-r");
+    hafnarfjordurButton.classList.remove(
+      "outline-2",
+      "outline-offset-2",
+      "outline-dotted"
+    );
   });
 });

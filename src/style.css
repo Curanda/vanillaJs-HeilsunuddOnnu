@@ -44,6 +44,38 @@
   opacity: 0;
 }
 
+.wave-2 {
+  content: "";
+  position: absolute;
+  bottom: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 1px;
+  z-index: -1;
+  border: #ffffff 3px solid;
+  border-radius: 300px / 150px;
+  animation: ripple 1.5s ease-out infinite;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.wave-2::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 1px;
+  z-index: -1;
+  border: #ffffff 3px solid;
+  border-radius: 300px / 150px;
+  animation: ripple-2 1.5s ease-out 0.75s infinite;
+  pointer-events: none;
+  opacity: 0;
+}
+
 @keyframes ripple {
   from {
     opacity: 1;

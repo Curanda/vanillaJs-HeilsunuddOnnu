@@ -16,7 +16,7 @@
         alt="stripes"
       />
       <nav
-        class="flex flex-row w-full justify-evenly gap-24 text-nowrap tracking-widest text-black text-2xl"
+        class="flex flex-row w-full justify-evenly gap-24 text-nowrap tracking-widest text-black text-2xl [&>div>div>a]:hover:outline-2 [&>div>div>a]:hover:outline-offset-2 [&>div>div>a]:hover:outline-dotted"
       >
         <div class="flex flex-row items-center justify-between gap-24">
           <div class="relative inline-block ripple-parent">
@@ -82,7 +82,7 @@
     </main>
     <section
       id="bookings"
-      class="bg-[url(/bg2.png)] bg-cover bg-center brightness-75 contrast-125 bg-no-repeat w-full h-screen flex flex-col items-center justify-between"
+      class="bg-[url(/bg2.png)] bg-cover bg-center static brightness-75 contrast-125 bg-no-repeat w-full h-screen flex flex-col items-center justify-between"
     >
       <img src="/grill-top2.png" alt="stripes" class="brightness-75 w-full" />
       <div class="flex flex-row items-center justify-center gap-4">
@@ -113,14 +113,22 @@
             ></span>
           </button>
         </div>
-        <div class="backdrop-contrast-100 w-full h-full">
+        <div class="w-full h-full">
           <iframe
             id="booking-iframe"
             src="https://noona.is/heilsunuddonnu/book"
-            class="h-full w-full mx-auto border-4 border-[#606C6E] rounded-lg brightness-75 contrast-200 drop-shadow-2xl"
+            class="h-full w-full mx-auto rounded-lg brightness-75 contrast-200 outline-2 outline-white outline-offset-2 outline-dotted"
             title="Booking Calendar for Heilsunudd Onnu"
           ></iframe>
         </div>
+      </div>
+      <div class="absolute bottom-80 left-80 flex flex-col items-center">
+        <img
+          src="/himbrimi3.png"
+          alt="himbrimi"
+          class="brightness-50 contrast-50 h-30 grayscale-75"
+        />
+        <div class="wave-2"></div>
       </div>
       <img src="/grill-top2.png" alt="stripes" class="brightness-75 w-full" />
     </section>
